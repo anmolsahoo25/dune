@@ -1,6 +1,6 @@
 type t = string
 
-module D = Stdlib.Digest
+module D = Blake3
 module Set = String.Set
 
 let hash = Hashtbl.hash

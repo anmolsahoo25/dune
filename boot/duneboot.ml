@@ -1028,6 +1028,7 @@ let resolve_externals external_libraries =
       | "threads.posix" ->
         ("threads" ^ Config.ocaml_archive_ext, [ "-I"; "+threads" ])
       | "unix" -> ("unix" ^ Config.ocaml_archive_ext, [])
+      | "blake3" -> ("blake3" ^ Config.ocaml_archive_ext, [])
       | s -> fatal "unhandled external library %s" s
     in
     let externals = List.map ~f:convert external_libraries in

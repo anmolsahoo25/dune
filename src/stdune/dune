@@ -3,7 +3,7 @@
  (public_name dune-private-libs.stdune)
  (synopsis "[Internal] Standard library of Dune")
  (preprocess future_syntax)
- (libraries unix dune_csexp)
+ (libraries unix dune_csexp blake3)
  (foreign_stubs
   (language c)
   (names fcntl_stubs)))
